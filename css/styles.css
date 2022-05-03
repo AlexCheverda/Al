@@ -18,7 +18,7 @@ body {
 
     background-color: yellowgreen;
     border: 25px solid bisque;
-    
+}
 
     /* margin: 50px; */
 
@@ -84,11 +84,3 @@ body {
     display: block;
 } */
 
-.item {
-    background-color: #565656;
-}
-
-.item-link {
-    color: #ffffff;
-    text-decoration: none;
-}
