@@ -84,6 +84,18 @@ h5 {
 
 }
 
+.gallery .list {
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 30px; */
+    margin: -15px;
+}
+
+.gallery .item {
+    margin: 15px;
+    /* margin-right: 30px; */
+}
+
 .navigation-link:hover,
 .navigation-link:focus {
     color: brown;
