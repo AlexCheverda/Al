@@ -1,52 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Module</title>
-    <!-- Шрифти -->
+    <title>Module 04 theory</title>
+    <!-- Project fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+
     <!-- Normalize -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <!-- Styles -->
+
+    <!-- Custom styles -->
     <link rel="stylesheet" href="./css/styles.css" />
-    <!-- <link rel="stylesheet" href="./css/flex.css" /> -->
   </head>
   <body>
     <!-- Шапка сайту -->
     <header class="header">
       <div class="container header-container">
-        <a href="./index.html" class="logo" aria-label="Логотип сайта Barber Shop">
-          <img src="./images/header/Logo.png" alt="Логотип" width="69px" height="56px" />
+        <a class="logo" href="./index.html" aria-label="Логотип сайта BarberShop">
+          <img src="./images/icons/logo.svg" alt="Логитип" width="69" height="56" />
         </a>
 
+        <!-- Якорні посилання -->
         <nav class="navigation">
           <ul class="navigation-list list">
             <li class="navigation-item">
-              <a class="link navigation-link" href="#">О нас</a>
+              <a class="link navigation-link" href="#about">О нас</a>
             </li>
             <li class="navigation-item">
-              <a class="link navigation-link" href="#">Услуги и цены</a>
+              <a class="link navigation-link" href="#price">Услуги и цены</a>
             </li>
             <li class="navigation-item">
-              <a class="link navigation-link" href="#">Мастера</a>
+              <a class="link navigation-link" href="#team">Мастера</a>
             </li>
             <li class="navigation-item">
-              <a class="link navigation-link" href="#">Контакты</a>
+              <a class="link navigation-link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <div class="header-group">
+        <!-- <ul class="studio-list list">
+          <li class="studio-item">
+            <a class="studio-link link" href="">
+              <svg class="studio-icon" width="16" height="12">
+                <use href="./images/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="studio-item">
+            <a class="studio-link link" href="">
+              <svg class="studio-icon link" width="10" height="16">
+                <use href="./images/sprite.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul> -->
+
+        <div class="header-gruop">
           <a class="link header-phone" href="tel:380441111111">+38 044 111 11 11</a>
           <button class="btn btn-mode-dark" type="button">онлайн-запись</button>
         </div>
@@ -62,7 +86,7 @@
             <li class="item">
               <a
                 class="link"
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Instagram</a
@@ -71,7 +95,7 @@
             <li class="item">
               <a
                 class="link"
-                href="https://www.youtube.com"
+                href="htts://www.youtube.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Youtube</a
@@ -82,13 +106,12 @@
             <p class="uppertitle" lang="en">A hair salon for men in Kyiv</p>
             <h1 class="main-title" lang="en">BarberShop</h1>
             <p class="subtitle">
-              We are experts in trendy men's haircuts.<br />
-              We work quickly, carefully, and tastefully.
+              Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
             </p>
           </div>
           <ul class="list">
             <li class="item">
-              <button class="slider-btn-disable" type="button">Назад</button>
+              <button class="slider-btn slider-btn-disable" type="button">Назад</button>
             </li>
             <li class="item">
               <button class="slider-btn" type="button">Вперед</button>
@@ -97,31 +120,31 @@
         </div>
       </section>
       <!-- Секція Про нас -->
-      <section class="about section">
+      <section class="about section" id="about">
         <div class="container about-container">
           <ul class="list">
             <li class="item">
               <img
                 class="about-img"
                 src="./images/about/img-1.jpg"
-                alt="гоління бороди"
-                width="270px"
-                height="445px"
+                alt="Бритье бороды"
+                width="270"
+                height="445"
               />
             </li>
             <li class="item">
               <img
                 class="about-img"
                 src="./images/about/img-2.jpg"
-                alt="гоління небезпечним лезом"
-                width="270px"
-                height="445px"
+                alt="Бритье опасной бритвой"
+                width="270"
+                height="445"
               />
             </li>
           </ul>
           <div class="about-group">
-            <p class="uppertitle">О нас</p>
-            <h2 class="section-title">Лучший Барбершоп<br />твоего города</h2>
+            <p class="uppertitle">О НАС</p>
+            <h2 class="section-title">Лучший Барбершоп твоего города</h2>
             <p class="subtitle">
               Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
             </p>
@@ -131,12 +154,12 @@
               команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы
               усовершенствовать каждого, кто к нам приходит!
             </p>
-            <button class="btn btn-mode-light" type="button">Онлайн-запись</button>
+            <button class="btn btn-mode-light" type="button">онлайн-запись</button>
           </div>
         </div>
       </section>
       <!-- Секція Послуги та ціни -->
-      <section class="price section">
+      <section class="price section" id="price">
         <div class="container">
           <p class="uppertitle">Проведи время в компании лучших мастеров</p>
           <h2 class="section-title">Услуги и цены</h2>
@@ -158,16 +181,16 @@
             <li class="price-item">
               <ul class="price-inner-list list">
                 <li class="price-inner-item">
-                  <span>Cтрижка у стажера</span><span>от 50 грн.</span>
+                  <span>Cтрижка у стажера</span> <span>от 50 грн.</span>
                 </li>
                 <li class="price-inner-item">
-                  <span>Стрижка под насадку</span><span>от 200 грн.</span>
+                  <span>Стрижка под насадку</span> <span>от 200 грн.</span>
                 </li>
                 <li class="price-inner-item">
-                  <span>Детская стрижка (до 12 лет)</span><span>от 300 грн.</span>
+                  <span>Детская стрижка (до 12 лет)</span> <span>от 300 грн.</span>
                 </li>
                 <li class="price-inner-item">
-                  <span>Камуфлирование седины</span><span>от 200 грн.</span>
+                  <span>Камуфлирование седины</span> <span>от 200 грн.</span>
                 </li>
               </ul>
             </li>
@@ -191,14 +214,14 @@
               <p class="benefits-amount">50 <sup class="benefits-amount-decor">+</sup></p>
               <p class="benefits-text">Наград за отличный сервис</p>
             </li>
-            <li>
+            <li class="item">
               <p class="benefits-amount">100<sup class="benefits-amount-decor">+</sup></p>
               <p class="benefits-text">Подарков постоянным клиентам</p>
             </li>
           </ul>
           <div class="benefits-group">
             <p class="uppertitle">старая традиционная школа</p>
-            <h2 class="section-title">Почему приходят<br />именно к нам?</h2>
+            <h2 class="section-title">Почему приходят именно к нам?</h2>
             <p class="subtitle">
               О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз
               прочитать.
@@ -207,7 +230,7 @@
         </div>
       </section>
       <!-- Секція Майстри -->
-      <section class="team section">
+      <section class="team section" id="team">
         <div class="container">
           <p class="uppertitle">для настоящих ценителей атмосферы</p>
           <h2 class="section-title">Наши мастера</h2>
@@ -223,26 +246,58 @@
               <div class="member-group">
                 <h3 class="member-title" lang="en">John Smith</h3>
                 <p class="member-position" lang="en">Extreme Barber</p>
-                <ul class="social list">
-                  <li class="social-item">
-                    <a class="social-link link" href="" target="_blank" rel="noopener noreferrer"
-                      >instagram</a
+                <ul class="socials list">
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="иконка Instagram"
                     >
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
                   </li>
-                  <li class="social-item">
-                    <a class="social-link link" href="" target="_blank" rel="noopener noreferrer"
-                      >twitter</a
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="иконка Twitter"
                     >
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
                   </li>
-                  <li class="social-item">
-                    <a class="social-link link" href="" target="_blank" rel="noopener noreferrer"
-                      >facebook</a
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="иконка Facebook"
                     >
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
                   </li>
-                  <li class="social-item">
-                    <a class="social-link link" href="" target="_blank" rel="noopener noreferrer"
-                      >linkedin</a
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="иконка Linkedin"
                     >
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -251,33 +306,65 @@
               <img
                 class="member-img"
                 src="./images/team/member-2.jpg"
-                alt="Michele Doe"
+                alt=""
                 width="370"
                 height="346"
               />
               <div class="member-group">
                 <h3 class="member-title" lang="en">Michele Doe</h3>
                 <p class="member-position" lang="en">Extreme Barber</p>
-                <ul class="social list">
-                  <li class="social-item">
-                    <a class="social-link link" href="" target="_blank" rel="noopener noreferrer"
-                      >instagram</a
+                <ul class="socials list">
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="иконка Instagram"
                     >
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
                   </li>
-                  <li class="social-item">
-                    <a class="social-link link" href="" target="_blank" rel="noopener noreferrer"
-                      >twitter</a
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="иконка Twitter"
                     >
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
                   </li>
-                  <li class="social-item">
-                    <a class="social-link link" href="" target="_blank" rel="noopener noreferrer"
-                      >facebook</a
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="иконка Facebook"
                     >
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
                   </li>
-                  <li class="social-item">
-                    <a class="social-link link" href="" target="_blank" rel="noopener noreferrer"
-                      >linkedin</a
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="иконка Linkedin"
                     >
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -286,33 +373,65 @@
               <img
                 class="member-img"
                 src="./images/team/member-3.jpg"
-                alt="Alan Black"
+                alt=""
                 width="370"
                 height="346"
               />
               <div class="member-group">
                 <h3 class="member-title" lang="en">Alan Black</h3>
                 <p class="member-position" lang="en">Extreme Barber</p>
-                <ul class="social list">
-                  <li class="social-item">
-                    <a class="social-link link" href="" target="_blank" rel="noopener noreferrer"
-                      >instagram</a
+                <ul class="socials list">
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="иконка Instagram"
                     >
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
                   </li>
-                  <li class="social-item">
-                    <a class="social-link link" href="" target="_blank" rel="noopener noreferrer"
-                      >twitter</a
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="иконка Twitter"
                     >
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
                   </li>
-                  <li class="social-item">
-                    <a class="social-link link" href="" target="_blank" rel="noopener noreferrer"
-                      >facebook</a
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="иконка Facebook"
                     >
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
                   </li>
-                  <li class="social-item">
-                    <a class="social-link link" href="" target="_blank" rel="noopener noreferrer"
-                      >linkedin</a
+                  <li class="socials-item">
+                    <a
+                      class="socials-link link"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="иконка Linkedin"
                     >
+                      <svg class="socials-icon" width="20" height="20">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -330,44 +449,55 @@
               <img
                 class="gallery-img"
                 src="./images/gallery/gallery-img-1.jpg"
-                alt="Стрижка под насадку"
-                width="270px"
-                height="360px"
+                alt=""
+                width="270"
+                height="360"
               />
             </li>
             <li class="item">
               <img
                 class="gallery-img"
                 src="./images/gallery/gallery-img-2.jpg"
-                alt="Стрижка бороды"
-                width="270px"
-                height="360px"
+                alt=""
+                width="270"
+                height="360"
               />
             </li>
             <li class="item">
               <img
                 class="gallery-img"
                 src="./images/gallery/gallery-img-3.jpg"
-                alt="Бритье опасной бритвой"
-                width="270px"
-                height="360px"
+                alt=""
+                width="270"
+                height="360"
               />
             </li>
             <li class="item">
               <img
                 class="gallery-img"
                 src="./images/gallery/gallery-img-4.jpg"
-                alt="Камуфлирование седины"
-                width="270px"
-                height="360px"
+                alt=""
+                width="270"
+                height="360"
               />
             </li>
           </ul>
         </div>
       </section>
       <!-- Секція Контакти -->
-      <section class="contacts section">
-        <div class="container"></div>
+      <section class="contacts section" id="contacts">
+        <!-- <svg class="pizza-icon" width="200" height="200">
+          <use href="./images/sprite.svg#pizza"></use>
+        </svg>
+        <ul class="clients list">
+          <li class="clients-item">
+            <a class="clients-link" href="">
+              <svg class="clients-icon" width="106" height="60">
+                <use href="./images/sprite.svg#logo-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul> -->
       </section>
     </main>
 
@@ -379,16 +509,16 @@
           <li class="item">
             <a
               class="link"
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
-              >Instagram
-            </a>
+              >Instagram</a
+            >
           </li>
           <li class="item">
-            <a class="link" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"
-              >Youtube
-            </a>
+            <a class="link" href="htts://www.youtube.com" target="_blank" rel="noopener noreferrer"
+              >Youtube</a
+            >
           </li>
         </ul>
       </div>
