@@ -822,3 +822,20 @@ img {
 .clients-link:focus .clients-icon {
     fill: #ff6c00;
 }
+
+/* CONTACT FORM */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+textarea {
+    resize: none;
+}
+
+.mes {
+    color: #cd6e61;
+    text-transform: uppercase;
+}
