@@ -825,10 +825,16 @@ img {
 
 /* CONTACT FORM */
 
-.contact-form {
+.contact-left-side {
     display: flex;
     flex-direction: column;
-    margin-bottom: 8px;
+    width: 300px;
+}
+
+.form-label {
+    font-weight: 600;
+    font-size: 11px;
+
 }
 
 textarea {
