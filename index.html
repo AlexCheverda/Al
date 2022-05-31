@@ -31,32 +31,32 @@
   <body id="body">
     <!-- Шапка сайту -->
     <header class="header" id="header">
-      <div class="container header-container">
+      <div class="container header__container">
         <a class="logo" href="./index.html" aria-label="Логотип сайта BarberShop">
-          <img src="./images/icons/logo.svg" alt="Логитип" width="69" height="56" />
+          <img class="logo__img" src="./images/icons/logo.svg" alt="Логитип" width="69" height="56" />
         </a>
 
         <!-- Якорні посилання -->
         <nav class="navigation">
-          <ul class="navigation-list list">
-            <li class="navigation-item">
-              <a class="link navigation-link current" href="#about">О нас</a>
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a class="link navigation__link current" href="#about">О нас</a>
             </li>
-            <li class="navigation-item">
-              <a class="link navigation-link" href="#price">Услуги и цены</a>
+            <li class="navigation__item">
+              <a class="link navigation__link" href="#price">Услуги и цены</a>
             </li>
-            <li class="navigation-item">
-              <a class="link navigation-link" href="#team">Мастера</a>
+            <li class="navigation__item">
+              <a class="link navigation__link" href="#team">Мастера</a>
             </li>
-            <li class="navigation-item">
-              <a class="link navigation-link" href="#contacts">Контакты</a>
+            <li class="navigation__item">
+              <a class="link navigation__link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <div class="header-gruop">
-          <a class="link header-phone" href="tel:380441111111">+38 044 111 11 11</a>
-          <button class="btn btn-mode-dark header-btn" type="button" data-modal-open>
+        <div class="header__group">
+          <a class="link header__phone" href="tel:380441111111">+38 044 111 11 11</a>
+          <button class="btn btn--mode-dark header__btn" type="button" data-modal-open>
             онлайн-запись
           </button>
           <div class="backdrop is-hidden" data-modal>
@@ -74,10 +74,10 @@
                 </svg>
               </button>
 
-              <strong class="form-title">Оставьте заявку на стрижку</strong>
+              <strong class="modal-title">Оставьте заявку на стрижку</strong>
               <form class="modal-form">
                 <!-- дані відвідувача -->
-                <label class="form-modal-group">
+                <label class="modal-form__group">
                   <span class="form-modal-label">Имя</span>
                   <input
                     class="form-modal-input"
@@ -87,23 +87,23 @@
                     placeholder=" "
                     required
                   />
-                  <span class="warning"> Имя должно состоять минимум из 3 символов </span>
-                  <svg class="warning-icon" width="18" height="18">
+                  <span class="alert alert--warning"> Имя должно состоять минимум из 3 символов </span>
+                  <svg class="alert-icon alert-icon--warning" width="18" height="18">
                     <use href="./images/form-sprite.svg#icon-warning"></use>
                   </svg>
-                  <span class="error"> Вы ввели не корректные данные </span>
-                  <svg class="error-icon" width="18" height="18">
+                  <span class="alert alert--error"> Вы ввели не корректные данные </span>
+                  <svg class="alert-icon--error" width="18" height="18">
                     <use href="./images/form-sprite.svg#icon-error"></use>
                   </svg>
-                  <svg class="form-modal-icon" width="20" height="20">
+                  <svg class="modal-form__icon" width="20" height="20">
                     <use href="./images/form-sprite.svg#person"></use>
                   </svg>
                 </label>
 
-                <label class="form-modal-group">
-                  <span class="form-modal-label">Телефон</span>
+                <label class="modal-form__group">
+                  <span class="modal-form__label">Телефон</span>
                   <input
-                    class="form-modal-input"
+                    class="modal-form__input"
                     type="phone"
                     name="user-phone"
                     placeholder=" "
@@ -117,15 +117,15 @@
                   <svg class="error-icon" width="15" height="15">
                     <use href="./images/form-sprite.svg#icon-error"></use>
                   </svg>
-                  <svg class="form-modal-icon" width="20" height="20">
+                  <svg class="modal-form__icon" width="20" height="20">
                     <use href="./images/form-sprite.svg#phone"></use>
                   </svg>
                 </label>
 
-                <label class="form-modal-group">
-                  <span class="form-modal-label">Почта</span>
+                <label class="modal-form__group">
+                  <span class="modal-form__label">Почта</span>
                   <input
-                    class="form-modal-input"
+                    class="modal-form__input"
                     type="mail"
                     name="user-mail"
                     placeholder=" "
@@ -139,36 +139,36 @@
                   <svg class="error-icon" width="15" height="15">
                     <use href="./images/form-sprite.svg#icon-error"></use>
                   </svg>
-                  <svg class="form-modal-icon" width="20" height="20">
+                  <svg class="modal-form__icon" width="20" height="20">
                     <use href="./images/form-sprite.svg#email"></use>
                   </svg>
                 </label>
 
                 <!-- варіанти оплати -->
                 <p>Виберите форму оплаты</p>
-                <div class="form-pay-type">
-                  <label class="form-pay-group">
+                <div class="modal-form__pay-type">
+                  <label class="modal-form__pay-group">
                     <input
-                      class="form-pay-checkbox visually-hidden"
+                      class="modal-form__pay-checkbox visually-hidden"
                       type="radio"
                       name="user-pay"
                       checked
                     />
-                    <svg class="form-pay-option" width="50" height="50">
+                    <svg class="modal-form__pay-option" width="50" height="50">
                       <use href="./images/form-sprite.svg#icom-ms-card"></use>
                     </svg>
                   </label>
 
-                  <label class="form-pay-group">
-                    <input class="form-pay-checkbox visually-hidden" type="radio" name="user-pay" />
-                    <svg class="form-pay-option" width="50" height="50">
+                  <label class="modal-form__pay-group">
+                    <input class="modal-form__pay-checkbox visually-hidden" type="radio" name="user-pay" />
+                    <svg class="modal-form__pay-option" width="50" height="50">
                       <use href="./images/form-sprite.svg#icon-visa"></use>
                     </svg>
                   </label>
                 </div>
 
                 <!-- політика приватності (чекбокс) -->
-                <label class="form-policy-group">
+                <label class="modal-form__policy-group">
                   <input
                     class="checkbox visually-hidden"
                     type="checkbox"
@@ -193,7 +193,7 @@
                   >
                 </label>
 
-                <button class="btn btn-mode-light submit-btn" type="submit">Отправить</button>
+                <button class="btn btn--mode-light submit-btn" type="submit">Отправить</button>
               </form>
             </div>
           </div>
@@ -205,9 +205,9 @@
     <main>
       <!-- Секція Герой -->
       <section class="hero" id="hero">
-        <div class="container">
-          <div class="hero-left-side">
-            <ul class="social-links-list hero-list list">
+        <div class="container hero__container">
+          <div class="hero__left-side">
+            <ul class="hero__list social-links-list list">
               <li class="social-links-item">
                 <a
                   class="social-links-item-link link"
@@ -228,44 +228,46 @@
               </li>
             </ul>
           </div>
-          <div class="hero-group">
-            <p class="uppertitle uppertitle-mode-dark" lang="en">A hair salon for men in Kyiv</p>
+          <div class="hero__group">
+            <p class="uppertitle uppertitle--mode-dark" lang="en">A hair salon for men in Kyiv</p>
             <h1 class="main-title" lang="en">BarberShop</h1>
             <p class="subtitle subtitle-title-mode-dark">
               Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
             </p>
           </div>
-          <ul class="slider-pagination list">
-            <li class="slider-item active"></li>
-            <li class="slider-item"></li>
-            <li class="slider-item"></li>
-          </ul>
-          <ul class="slider-controls list">
-            <li class="slider-item-controls">
-              <button class="slider-btn slider-btn-disable" type="button">Назад</button>
-            </li>
-            <li class="slider-item-controls">
-              <button class="slider-btn" type="button">Вперед</button>
-            </li>
-          </ul>
+          <div class="slider">
+            <ul class="slider__pagination list">
+              <li class="slider__item active"></li>
+              <li class="slider__item"></li>
+              <li class="slider__item"></li>
+            </ul>
+            <ul class="slider__controls list">
+              <li class="slider__item-controls">
+                <button class="slider__btn slider--btn-disable" type="button">Назад</button>
+              </li>
+              <li class="slider__item-controls">
+                <button class="slider__btn" type="button">Вперед</button>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <!-- Секція Про нас -->
       <section class="about section" id="about">
-        <div class="container about-container">
-          <ul class="list">
-            <li class="item">
+        <div class="container about__container">
+          <ul class="about-list list">
+            <li class="about-list__item">
               <img
-                class="about-img"
+                class="about-list__img"
                 src="./images/about/img-1.jpg"
                 alt="Бритье бороды"
                 width="270"
                 height="445"
               />
             </li>
-            <li class="item">
+            <li class="about-list__item">
               <img
-                class="about-img"
+                class="about-list__img"
                 src="./images/about/img-2.jpg"
                 alt="Бритье опасной бритвой"
                 width="270"
@@ -273,26 +275,26 @@
               />
             </li>
           </ul>
-          <div class="about-group" data-aos="fade-left">
-            <p class="uppertitle uppertitle-mode-light">О НАС</p>
+          <div class="about__group" data-aos="fade-left">
+            <p class="uppertitle uppertitle--mode-light">О НАС</p>
             <h2 class="section-title section-title-mode-light">Лучший Барбершоп твоего города</h2>
-            <p class="subtitle subtitle-title-mode-light about-subtitle">
+            <p class="subtitle subtitle-title-mode-light about__subtitle">
               Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
             </p>
-            <p class="description">
+            <p class="description about__description">
               Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И
               когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы
               команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы
               усовершенствовать каждого, кто к нам приходит!
             </p>
-            <button class="btn btn-mode-light" type="button">онлайн-запись</button>
+            <button class="btn btn--mode-light" type="button">онлайн-запись</button>
           </div>
         </div>
       </section>
       <!-- Секція Послуги та ціни -->
       <section class="price section" id="price">
         <div class="container">
-          <p class="uppertitle uppertitle-mode-dark">Проведи время в компании лучших мастеров</p>
+          <p class="uppertitle uppertitle--mode-dark">Проведи время в компании лучших мастеров</p>
           <h2 class="section-title section-title-mode-dark">Услуги и цены</h2>
           <ul class="price-list list">
             <li class="price-item">
@@ -326,7 +328,7 @@
               </ul>
             </li>
           </ul>
-          <button class="btn btn-mode-dark" type="button">онлайн-запись</button>
+          <button class="btn btn--mode-dark" type="button">онлайн-запись</button>
         </div>
       </section>
       <!-- Секція Переваги -->
@@ -351,7 +353,7 @@
             </li>
           </ul>
           <div class="benefits-group">
-            <p class="uppertitle uppertitle-mode-light">старая традиционная школа</p>
+            <p class="uppertitle uppertitle--mode-light">старая традиционная школа</p>
             <h2 class="section-title section-title-mode-light">Почему приходят именно к нам?</h2>
             <p class="subtitle subtitle-title-mode-light">
               О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз
@@ -363,7 +365,7 @@
       <!-- Секція Майстри -->
       <section class="team section" id="team">
         <div class="container">
-          <p class="uppertitle uppertitle-mode-light">для настоящих ценителей атмосферы</p>
+          <p class="uppertitle uppertitle--mode-light">для настоящих ценителей атмосферы</p>
           <h2 class="section-title section-title-mode-light">Наши мастера</h2>
           <ul class="member-list list grid">
             <li class="member-item grid-item" data-aos="zoom-in-up" data-aos-delay="300">
@@ -573,7 +575,7 @@
       <!-- Секція Галерея -->
       <section class="gallery section">
         <div class="container">
-          <p class="uppertitle uppertitle-mode-light gallery-uppertitle">
+          <p class="uppertitle uppertitle--mode-light gallery-uppertitle">
             На латинском языке “барба” означает “борода”
           </p>
           <h2 class="section-title visually-hidden">Галерея работ</h2>
@@ -657,7 +659,7 @@
                 ></textarea>
                 <span class="form-label">сообщение</span>
               </label>
-              <button class="btn btn-mode-dark" type="submit">отправить</button>
+              <button class="btn btn--mode-dark" type="submit">отправить</button>
             </form>
           </div>
           <!-- Контакти барбершопу -->
